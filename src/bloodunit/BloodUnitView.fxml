@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="550.0" minWidth="550.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bloodunit.BloodUnitViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8e4de" height="473.0" layoutY="77.0" stroke="BLACK" strokeType="INSIDE" width="550.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#67ffa9" height="77.0" stroke="BLACK" strokeType="INSIDE" width="550.0" />
+      <Text layoutX="20.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BLOOD UNIT COLLECTION" wrappingWidth="510.13671875">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Text>
+      <Button layoutX="296.0" layoutY="165.0" mnemonicParsing="false" onAction="#do_search" prefHeight="27.0" prefWidth="79.0" text="Search">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <SepiaTone level="0.5" />
+         </effect>
+      </Button>
+      <Label layoutX="58.0" layoutY="127.0" text="Registered Mobile Number">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="mobile" editable="true" layoutX="58.0" layoutY="166.0" prefHeight="27.0" prefWidth="176.0" promptText="Enter Mobile No">
+         <effect>
+            <Glow />
+         </effect>
+      </ComboBox>
+      <Label layoutX="61.0" layoutY="240.0" text="Blood Group">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bg" editable="false" layoutX="61.0" layoutY="275.0" prefHeight="26.0" prefWidth="176.0" promptText="Blood Group" />
+      <Label layoutX="61.0" layoutY="338.0" text="Date Of Donation">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="rdate" layoutX="62.0" layoutY="371.0" prefHeight="27.0" prefWidth="176.0" promptText="Select Date">
+         <effect>
+            <Glow />
+         </effect>
+      </DatePicker>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#67ffa9" height="95.0" layoutY="454.0" stroke="BLACK" strokeType="INSIDE" width="550.0" />
+      <Button layoutX="57.0" layoutY="473.0" mnemonicParsing="false" onAction="#do_upload" prefHeight="45.0" prefWidth="150.0" text="Upload Data">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <SepiaTone level="0.5" />
+         </effect>
+      </Button>
+      <Button layoutX="300.0" layoutY="473.0" mnemonicParsing="false" onAction="#do_clear" prefHeight="45.0" prefWidth="141.0" text="New">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <SepiaTone level="0.5" />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
