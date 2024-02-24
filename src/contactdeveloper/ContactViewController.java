@@ -72,7 +72,7 @@ public class ContactViewController {
     @FXML
     void showLinkedin(MouseEvent event) {
     	try {
-			Desktop.getDesktop().browse(new URI("https://www.linkedin.com/in/rahul-1710-singla"));
+			Desktop.getDesktop().browse(new URI("https://www.linkedin.com/in/simranpreet-singh-mangat-935b09243"));
 
 		} 
     	catch (Exception e) {
